@@ -212,6 +212,7 @@
   background-color: #cecccc;
 }
 #value1:checked ~ .main .main__image {
+  transition: all 1s ease;
   background: #FD7401;
   background-repeat: no-repeat;
   background-position: center;
@@ -223,6 +224,7 @@
   background-image: url(img/icons/padlock.png);
 }
 #value1:checked ~ .main .main__button_login {
+  transition: all 1s ease;
   border: 1px solid #FD7401;
   background-color: #FD7401;
   color: #FFFFFF;
@@ -233,6 +235,7 @@
   background-color: #fa8e35;
 }
 #value1:checked ~ .main .main__button_signup {
+  transition: all 1s ease;
   border: 1px solid #FD7401;
   color: #FD7401;
 }
@@ -242,9 +245,11 @@
   color: #fa8e35;
 }
 #value1:checked ~ .design-section .design-section__image {
+  transition: all 1s ease;
   background-image: url(img/source/layersOrange.svg);
 }
 #value2:checked ~ .main .main__image {
+  transition: all 1s ease;
   background: #1E2772;
   background-repeat: no-repeat;
   background-position: center;
@@ -256,6 +261,7 @@
   background-image: url(img/icons/padlock.png);
 }
 #value2:checked ~ .main .main__button_login {
+  transition: all 1s ease;
   border: 1px solid #1E2772;
   background-color: #1E2772;
   color: #FFFFFF;
@@ -266,6 +272,7 @@
   background-color: #363e7c;
 }
 #value2:checked ~ .main .main__button_signup {
+  transition: all 1s ease;
   border: 1px solid #1E2772;
   color: #1E2772;
 }
@@ -275,9 +282,11 @@
   color: #363e7c;
 }
 #value2:checked ~ .design-section .design-section__image {
+  transition: all 1s ease;
   background-image: url(img/source/layersPurple.svg);
 }
 #value3:checked ~ .main .main__image {
+  transition: all 1s ease;
   background: #555555;
   background-repeat: no-repeat;
   background-position: center;
@@ -289,6 +298,7 @@
   background-image: url(img/icons/padlock.png);
 }
 #value3:checked ~ .main .main__button_login {
+  transition: all 1s ease;
   border: 1px solid #555555;
   background-color: #555555;
   color: #FFFFFF;
@@ -299,6 +309,7 @@
   background-color: #726969;
 }
 #value3:checked ~ .main .main__button_signup {
+  transition: all 1s ease;
   border: 1px solid #555555;
   color: #555555;
 }
@@ -308,9 +319,11 @@
   color: #726969;
 }
 #value3:checked ~ .design-section .design-section__image {
+  transition: all 1s ease;
   background-image: url(img/source/layersGrey.svg);
 }
 #value4:checked ~ .main .main__image {
+  transition: all 1s ease;
   background: #C2C2C2;
   background-repeat: no-repeat;
   background-position: center;
@@ -322,6 +335,7 @@
   background-image: url(img/icons/padlock.png);
 }
 #value4:checked ~ .main .main__button_login {
+  transition: all 1s ease;
   border: 1px solid #C2C2C2;
   background-color: #C2C2C2;
   color: #FFFFFF;
@@ -332,6 +346,7 @@
   background-color: #cecccc;
 }
 #value4:checked ~ .main .main__button_signup {
+  transition: all 1s ease;
   border: 1px solid #C2C2C2;
   color: #C2C2C2;
 }
@@ -341,6 +356,7 @@
   color: #cecccc;
 }
 #value4:checked ~ .design-section .design-section__image {
+  transition: all 1s ease;
   background-image: url(img/source/layersGreyLight.svg);
 }
 @media screen and (max-width: 1000px) {
