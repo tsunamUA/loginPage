@@ -5,6 +5,13 @@
   display: flex;
   font-family: 'Poppins';
 }
+.input-design {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
 .main {
   max-width: 480px;
   width: 100%;
@@ -19,7 +26,7 @@
   font-size: 16px;
   line-height: 24px;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 30px 15px;
   box-shadow: 10px 0px 20px 20px #e9e9e9;
   z-index: 1;
 }
@@ -161,4 +168,222 @@
   width: 100%;
   max-height: 632px;
   height: 100%;
+}
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  gap: 43px;
+  background-color: #F1F3F6;
+  padding: 0 50px;
+}
+.checkboxes__label {
+  width: 100px;
+  height: 100px;
+}
+.checkboxes__label[for="value1"] {
+  background-color: #FD7401;
+}
+.checkboxes__label[for="value1"]:hover {
+  cursor: pointer;
+  background-color: #fa8e35;
+}
+.checkboxes__label[for="value2"] {
+  background-color: #1E2772;
+}
+.checkboxes__label[for="value2"]:hover {
+  cursor: pointer;
+  background-color: #363e7c;
+}
+.checkboxes__label[for="value3"] {
+  background-color: #555555;
+}
+.checkboxes__label[for="value3"]:hover {
+  cursor: pointer;
+  background-color: #726969;
+}
+.checkboxes__label[for="value4"] {
+  background-color: #C2C2C2;
+}
+.checkboxes__label[for="value4"]:hover {
+  cursor: pointer;
+  background-color: #cecccc;
+}
+#value1:checked ~ .main .main__image {
+  background: #FD7401;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#value1:checked ~ .main .main__image_email {
+  background-image: url(img/icons/email.png);
+}
+#value1:checked ~ .main .main__image_password {
+  background-image: url(img/icons/padlock.png);
+}
+#value1:checked ~ .main .main__button_login {
+  border: 1px solid #FD7401;
+  background-color: #FD7401;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+#value1:checked ~ .main .main__button_login:hover {
+  cursor: pointer;
+  background-color: #fa8e35;
+}
+#value1:checked ~ .main .main__button_signup {
+  border: 1px solid #FD7401;
+  color: #FD7401;
+}
+#value1:checked ~ .main .main__button_signup:hover {
+  cursor: pointer;
+  border: 1px solid #fa8e35;
+  color: #fa8e35;
+}
+#value1:checked ~ .design-section .design-section__image {
+  background-image: url(img/source/layersOrange.svg);
+}
+#value2:checked ~ .main .main__image {
+  background: #1E2772;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#value2:checked ~ .main .main__image_email {
+  background-image: url(img/icons/email.png);
+}
+#value2:checked ~ .main .main__image_password {
+  background-image: url(img/icons/padlock.png);
+}
+#value2:checked ~ .main .main__button_login {
+  border: 1px solid #1E2772;
+  background-color: #1E2772;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+#value2:checked ~ .main .main__button_login:hover {
+  cursor: pointer;
+  background-color: #363e7c;
+}
+#value2:checked ~ .main .main__button_signup {
+  border: 1px solid #1E2772;
+  color: #1E2772;
+}
+#value2:checked ~ .main .main__button_signup:hover {
+  cursor: pointer;
+  border: 1px solid #363e7c;
+  color: #363e7c;
+}
+#value2:checked ~ .design-section .design-section__image {
+  background-image: url(img/source/layersPurple.svg);
+}
+#value3:checked ~ .main .main__image {
+  background: #555555;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#value3:checked ~ .main .main__image_email {
+  background-image: url(img/icons/email.png);
+}
+#value3:checked ~ .main .main__image_password {
+  background-image: url(img/icons/padlock.png);
+}
+#value3:checked ~ .main .main__button_login {
+  border: 1px solid #555555;
+  background-color: #555555;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+#value3:checked ~ .main .main__button_login:hover {
+  cursor: pointer;
+  background-color: #726969;
+}
+#value3:checked ~ .main .main__button_signup {
+  border: 1px solid #555555;
+  color: #555555;
+}
+#value3:checked ~ .main .main__button_signup:hover {
+  cursor: pointer;
+  border: 1px solid #726969;
+  color: #726969;
+}
+#value3:checked ~ .design-section .design-section__image {
+  background-image: url(img/source/layersGrey.svg);
+}
+#value4:checked ~ .main .main__image {
+  background: #C2C2C2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#value4:checked ~ .main .main__image_email {
+  background-image: url(img/icons/email.png);
+}
+#value4:checked ~ .main .main__image_password {
+  background-image: url(img/icons/padlock.png);
+}
+#value4:checked ~ .main .main__button_login {
+  border: 1px solid #C2C2C2;
+  background-color: #C2C2C2;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+#value4:checked ~ .main .main__button_login:hover {
+  cursor: pointer;
+  background-color: #cecccc;
+}
+#value4:checked ~ .main .main__button_signup {
+  border: 1px solid #C2C2C2;
+  color: #C2C2C2;
+}
+#value4:checked ~ .main .main__button_signup:hover {
+  cursor: pointer;
+  border: 1px solid #cecccc;
+  color: #cecccc;
+}
+#value4:checked ~ .design-section .design-section__image {
+  background-image: url(img/source/layersGreyLight.svg);
+}
+@media screen and (max-width: 1000px) {
+  .checkboxes {
+    width: 130px;
+    gap: 43px;
+  }
+  .checkboxes__label {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    gap: 43px;
+    background-color: #F1F3F6;
+    padding: 0 50px;
+  }
+  .checkboxes__label {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .design-section {
+    display: none;
+  }
+  .main {
+    flex-grow: 1;
+  }
+  .checkboxes {
+    flex-grow: 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .checkboxes {
+    display: none;
+  }
+}
+@media screen and (max-width: 332px) {
 }

@@ -1,16 +1,28 @@
 @import url(./reset.css);
 @import url(./fonts/stylesheet.css);
 
+@white-bg: #FFFFFF;
+@shadow-bg: #e9e9e9;
+@input-bg: #F1F3F6;
+
 .wrapper{
     min-height: 100vh;
     display: flex;
     font-family: 'Poppins';
 }
 
+.input-design{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
 .main{
     max-width: 480px;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: @white-bg;
 
     display: flex;
     flex-direction: column;
@@ -24,8 +36,8 @@
     line-height: 24px;
 
     box-sizing: border-box;
-    padding: 0 15px;
-    box-shadow: 10px 0px 20px 20px #e9e9e9;
+    padding: 30px 15px;
+    box-shadow: 10px 0px 20px 20px @shadow-bg;
     z-index: 1;
 
     &__logo{
@@ -78,7 +90,7 @@
         outline: none;
         border: none;
         padding: 0 60px 0 20px;
-        background: #F1F3F6;
+        background: @input-bg;
         font-family: 'Poppins';
         font-size: 16px;
     }
@@ -126,7 +138,7 @@
         &_login{
             border: 1px solid #FD7401;
             background-color: #FD7401;
-            color: #FFFFFF;
+            color: @white-bg;
             margin-bottom: 30px;
             &:hover{
                 cursor: pointer;
@@ -173,7 +185,7 @@
 }
 
 .design-section{
-    background-color: #F1F3F6;
+    background-color: @input-bg;
     width: 100%;
 
     display: flex;
@@ -191,3 +203,282 @@
     }
 }
 
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    gap: 43px;
+    
+    background-color: @input-bg;
+    padding: 0 50px;
+
+    &__label{
+        width: 100px;
+        height: 100px;
+
+        &[for="value1"]{
+            background-color: #FD7401;
+            &:hover{
+                cursor: pointer;
+                background-color: #fa8e35;
+            }
+        }
+        &[for="value2"]{
+            background-color: #1E2772;
+            &:hover{
+                cursor: pointer;
+                background-color: #363e7c;
+            }
+        }
+        &[for="value3"]{
+            background-color: #555555;
+            &:hover{
+                cursor: pointer;
+                background-color: #726969;
+            }
+        }
+        &[for="value4"]{
+            background-color: #C2C2C2;
+            &:hover{
+                cursor: pointer;
+                background-color: #cecccc;
+            }
+        }
+    }
+    
+}
+
+#value1:checked{
+    ~.main{
+        .main__image{
+            background: #FD7401;
+            background-repeat: no-repeat;
+            background-position: center;
+            &_email{
+                background-image: url(./img/icons/email.png);
+            }
+    
+            &_password{
+                background-image: url(./img/icons/padlock.png);
+            }
+        }
+
+        .main__button{
+            &_login{
+                border: 1px solid #FD7401;
+                background-color: #FD7401;
+                color: @white-bg;
+                margin-bottom: 30px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #fa8e35;
+                }
+            }
+    
+            &_signup{
+                border: 1px solid #FD7401;
+                color: #FD7401;
+                &:hover{
+                    cursor: pointer;
+                    border: 1px solid #fa8e35;
+                    color: #fa8e35;
+                }
+            }
+        }
+    }
+    ~.design-section{
+        .design-section__image{
+            background-image: url(./img/source/layersOrange.svg);
+        }
+    }
+}
+
+#value2:checked{
+    ~.main{
+        .main__image{
+            background: #1E2772;
+            background-repeat: no-repeat;
+            background-position: center;
+            &_email{
+                background-image: url(./img/icons/email.png);
+            }
+    
+            &_password{
+                background-image: url(./img/icons/padlock.png);
+            }
+        }
+
+        .main__button{
+            &_login{
+                border: 1px solid #1E2772;
+                background-color: #1E2772;
+                color: @white-bg;
+                margin-bottom: 30px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #363e7c;
+                }
+            }
+    
+            &_signup{
+                border: 1px solid #1E2772;
+                color: #1E2772;
+                &:hover{
+                    cursor: pointer;
+                    border: 1px solid #363e7c;
+                    color: #363e7c;
+                }
+            }
+        }
+    }
+    ~.design-section{
+        .design-section__image{
+            background-image: url(./img/source/layersPurple.svg);
+        }
+    }
+}
+
+#value3:checked{
+    ~.main{
+        .main__image{
+            background: #555555;
+            background-repeat: no-repeat;
+            background-position: center;
+            &_email{
+                background-image: url(./img/icons/email.png);
+            }
+    
+            &_password{
+                background-image: url(./img/icons/padlock.png);
+            }
+        }
+
+        .main__button{
+            &_login{
+                border: 1px solid #555555;
+                background-color: #555555;
+                color: @white-bg;
+                margin-bottom: 30px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #726969;
+                }
+            }
+    
+            &_signup{
+                border: 1px solid #555555;
+                color: #555555;
+                &:hover{
+                    cursor: pointer;
+                    border: 1px solid #726969;
+                    color: #726969;
+                }
+            }
+        }
+    }
+    ~.design-section{
+        .design-section__image{
+            background-image: url(./img/source/layersGrey.svg);
+        }
+    }
+}
+
+#value4:checked{
+    ~.main{
+        .main__image{
+            background: #C2C2C2;
+            background-repeat: no-repeat;
+            background-position: center;
+            &_email{
+                background-image: url(./img/icons/email.png);
+            }
+    
+            &_password{
+                background-image: url(./img/icons/padlock.png);
+            }
+        }
+
+        .main__button{
+            &_login{
+                border: 1px solid #C2C2C2;
+                background-color: #C2C2C2;
+                color: @white-bg;
+                margin-bottom: 30px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #cecccc;
+                }
+            }
+    
+            &_signup{
+                border: 1px solid #C2C2C2;
+                color: #C2C2C2;
+                &:hover{
+                    cursor: pointer;
+                    border: 1px solid #cecccc;
+                    color: #cecccc;
+                }
+            }
+        }
+    }
+    ~.design-section{
+        .design-section__image{
+            background-image: url(./img/source/layersGreyLight.svg);
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .checkboxes{
+        width: 130px;
+        gap: 43px;
+    
+        &__label{
+            width: 75px;
+            height: 75px;
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .checkboxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        gap: 43px;
+        
+        background-color: @input-bg;
+        padding: 0 50px;
+    
+        &__label{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+    .design-section{
+        display: none;
+    }
+    .main{
+        flex-grow: 1;
+    }
+    .checkboxes{
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .checkboxes{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 332px){
+    //It would be possible to reduce fonts and blocks, but since I initially did not think to create font mixins, I did not. I should also switch to something else, such as sass, because less has a lot of problems and inconveniences. It would also be possible to add additional support code like '-webkitblahblah' using the plugin.
+}
