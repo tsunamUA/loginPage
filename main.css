@@ -478,4 +478,6 @@
   }
 }
 
-@media screen and (max-width: 332px) {}
+@media screen and (max-width: 332px) {
+  /* It would be possible to reduce fonts and blocks, but since I initially did not think to create font mixins, I did not. I should also switch to something else, such as sass,  because less has a lot of problems and inconveniences. It would also be possible to add additional support code like '-webkitblahblah' using the plugin. */
+}
