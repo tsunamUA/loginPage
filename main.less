@@ -5,13 +5,13 @@
 @shadow-bg: #e9e9e9;
 @input-bg: #F1F3F6;
 
-.wrapper{
+.wrapper {
     min-height: 100vh;
     display: flex;
     font-family: 'Poppins';
 }
 
-.input-design{
+.input-design {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@
     height: 0;
 }
 
-.main{
+.main {
     max-width: 480px;
     width: 100%;
     background-color: @white-bg;
@@ -40,7 +40,7 @@
     box-shadow: 10px 0px 20px 20px @shadow-bg;
     z-index: 1;
 
-    &__logo{
+    &__logo {
         background-image: url(./img/icons/logo.svg);
         background-repeat: no-repeat;
         background-position: center center;
@@ -51,36 +51,36 @@
         margin-bottom: 23px;
     }
 
-    &__login-text{
+    &__login-text {
         font-weight: 700;
         margin-bottom: 45px;
     }
 
-    &__login-form{
+    &__login-form {
         max-width: 410px;
         width: 100%;
         font-weight: 400;
     }
 
-    &__label{
+    &__label {
         color: #555555;
         display: block;
     }
-    
-    &__input-wrapper{
+
+    &__input-wrapper {
         display: flex;
         min-height: 50px;
 
-        &_email{
+        &_email {
             margin-bottom: 23px;
         }
 
-        &_password{
+        &_password {
             margin-bottom: 10px;
         }
     }
 
-    &__input{
+    &__input {
         color: #555555;
         max-width: 410px;
         width: 100%;
@@ -95,7 +95,7 @@
         font-size: 16px;
     }
 
-    &__image{
+    &__image {
         max-width: 50px;
         width: 100%;
         background: #FD7401;
@@ -105,28 +105,28 @@
         position: relative;
         margin-left: -50px;
 
-        &_email{
+        &_email {
             background-image: url(./img/icons/email.png);
         }
 
-        &_password{
+        &_password {
             background-image: url(./img/icons/padlock.png);
         }
     }
 
-    &__password-recovery{
+    &__password-recovery {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 33px;
     }
 
-    &__password-recovery-text{
+    &__password-recovery-text {
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
     }
 
-    &__button{
+    &__button {
         max-width: 410px;
         width: 100%;
         border-radius: 8px;
@@ -135,21 +135,23 @@
         font-weight: 600;
         font-size: 16px;
 
-        &_login{
+        &_login {
             border: 1px solid #FD7401;
             background-color: #FD7401;
             color: @white-bg;
             margin-bottom: 30px;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 background-color: #fa8e35;
             }
         }
 
-        &_signup{
+        &_signup {
             border: 1px solid #FD7401;
             color: #FD7401;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 border: 1px solid #fa8e35;
                 color: #fa8e35;
@@ -157,7 +159,7 @@
         }
     }
 
-    &__border-wrapper{
+    &__border-wrapper {
         max-width: 410px;
         width: 100%;
         display: flex;
@@ -166,25 +168,26 @@
         margin-bottom: 23px;
     }
 
-    &__border{
+    &__border {
         max-width: 175px;
         width: 100%;
         min-height: 1px;
         background-color: #C2C2C2;
     }
 
-    &__border-text{
+    &__border-text {
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
         color: #C2C2C2;
         margin-left: 20px;
-        margin-right: 20px;;
+        margin-right: 20px;
+        ;
     }
 
 }
 
-.design-section{
+.design-section {
     background-color: @input-bg;
     width: 100%;
 
@@ -192,7 +195,7 @@
     justify-content: center;
     align-items: center;
 
-    &__image{
+    &__image {
         background-image: url(./img/source/layersOrange.svg);
         background-repeat: no-repeat;
         background-position: center center;
@@ -203,88 +206,98 @@
     }
 }
 
-.checkboxes{
+.checkboxes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 200px;
     gap: 43px;
-    
+
     background-color: @input-bg;
     padding: 0 50px;
 
-    &__label{
+    &__label {
         width: 100px;
         height: 100px;
 
-        &[for="value1"]{
+        &[for="value1"] {
             background-color: #FD7401;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 background-color: #fa8e35;
             }
         }
-        &[for="value2"]{
+
+        &[for="value2"] {
             background-color: #1E2772;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 background-color: #363e7c;
             }
         }
-        &[for="value3"]{
+
+        &[for="value3"] {
             background-color: #555555;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 background-color: #726969;
             }
         }
-        &[for="value4"]{
+
+        &[for="value4"] {
             background-color: #C2C2C2;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 background-color: #cecccc;
             }
         }
     }
-    
+
 }
 
-#value1:checked{
-    ~.main{
-        
-        .main__image{
+#value1:checked {
+    ~.main {
+
+        .main__image {
             transition: all 1s ease;
             background: #FD7401;
             background-repeat: no-repeat;
             background-position: center;
-            &_email{
+
+            &_email {
                 background-image: url(./img/icons/email.png);
             }
-    
-            &_password{
+
+            &_password {
                 background-image: url(./img/icons/padlock.png);
             }
         }
 
-        .main__button{
-            &_login{
+        .main__button {
+            &_login {
                 transition: all 1s ease;
                 border: 1px solid #FD7401;
                 background-color: #FD7401;
                 color: @white-bg;
                 margin-bottom: 30px;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     background-color: #fa8e35;
                 }
             }
-    
-            &_signup{
+
+            &_signup {
                 transition: all 1s ease;
                 border: 1px solid #FD7401;
                 color: #FD7401;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     border: 1px solid #fa8e35;
                     color: #fa8e35;
@@ -292,48 +305,52 @@
             }
         }
     }
-    ~.design-section{
-        .design-section__image{
+
+    ~.design-section {
+        .design-section__image {
             transition: all 1s ease;
             background-image: url(./img/source/layersOrange.svg);
         }
     }
 }
 
-#value2:checked{
-    ~.main{
-        .main__image{
+#value2:checked {
+    ~.main {
+        .main__image {
             transition: all 1s ease;
             background: #1E2772;
             background-repeat: no-repeat;
             background-position: center;
-            &_email{
+
+            &_email {
                 background-image: url(./img/icons/email.png);
             }
-    
-            &_password{
+
+            &_password {
                 background-image: url(./img/icons/padlock.png);
             }
         }
 
-        .main__button{
-            &_login{
+        .main__button {
+            &_login {
                 transition: all 1s ease;
                 border: 1px solid #1E2772;
                 background-color: #1E2772;
                 color: @white-bg;
                 margin-bottom: 30px;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     background-color: #363e7c;
                 }
             }
-    
-            &_signup{
+
+            &_signup {
                 transition: all 1s ease;
                 border: 1px solid #1E2772;
                 color: #1E2772;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     border: 1px solid #363e7c;
                     color: #363e7c;
@@ -341,48 +358,52 @@
             }
         }
     }
-    ~.design-section{
-        .design-section__image{
+
+    ~.design-section {
+        .design-section__image {
             transition: all 1s ease;
             background-image: url(./img/source/layersPurple.svg);
         }
     }
 }
 
-#value3:checked{
-    ~.main{
-        .main__image{
+#value3:checked {
+    ~.main {
+        .main__image {
             transition: all 1s ease;
             background: #555555;
             background-repeat: no-repeat;
             background-position: center;
-            &_email{
+
+            &_email {
                 background-image: url(./img/icons/email.png);
             }
-    
-            &_password{
+
+            &_password {
                 background-image: url(./img/icons/padlock.png);
             }
         }
 
-        .main__button{
-            &_login{
+        .main__button {
+            &_login {
                 transition: all 1s ease;
                 border: 1px solid #555555;
                 background-color: #555555;
                 color: @white-bg;
                 margin-bottom: 30px;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     background-color: #726969;
                 }
             }
-    
-            &_signup{
+
+            &_signup {
                 transition: all 1s ease;
                 border: 1px solid #555555;
                 color: #555555;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     border: 1px solid #726969;
                     color: #726969;
@@ -390,48 +411,52 @@
             }
         }
     }
-    ~.design-section{
-        .design-section__image{
+
+    ~.design-section {
+        .design-section__image {
             transition: all 1s ease;
             background-image: url(./img/source/layersGrey.svg);
         }
     }
 }
 
-#value4:checked{
-    ~.main{
-        .main__image{
+#value4:checked {
+    ~.main {
+        .main__image {
             transition: all 1s ease;
             background: #C2C2C2;
             background-repeat: no-repeat;
             background-position: center;
-            &_email{
+
+            &_email {
                 background-image: url(./img/icons/email.png);
             }
-    
-            &_password{
+
+            &_password {
                 background-image: url(./img/icons/padlock.png);
             }
         }
 
-        .main__button{
-            &_login{
+        .main__button {
+            &_login {
                 transition: all 1s ease;
                 border: 1px solid #C2C2C2;
                 background-color: #C2C2C2;
                 color: @white-bg;
                 margin-bottom: 30px;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     background-color: #cecccc;
                 }
             }
-    
-            &_signup{
+
+            &_signup {
                 transition: all 1s ease;
                 border: 1px solid #C2C2C2;
                 color: #C2C2C2;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                     border: 1px solid #cecccc;
                     color: #cecccc;
@@ -439,8 +464,9 @@
             }
         }
     }
-    ~.design-section{
-        .design-section__image{
+
+    ~.design-section {
+        .design-section__image {
             transition: all 1s ease;
             background-image: url(./img/source/layersGreyLight.svg);
         }
@@ -448,54 +474,56 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .checkboxes{
+    .checkboxes {
         width: 130px;
         gap: 43px;
-    
-        &__label{
+
+        &__label {
             width: 75px;
             height: 75px;
         }
     }
 }
 
-@media screen and (max-width: 850px){
-    .checkboxes{
+@media screen and (max-width: 850px) {
+    .checkboxes {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100px;
         gap: 43px;
-        
+
         background-color: @input-bg;
         padding: 0 50px;
-    
-        &__label{
+
+        &__label {
             width: 50px;
             height: 50px;
         }
     }
 }
 
-@media screen and (max-width: 750px){
-    .design-section{
+@media screen and (max-width: 750px) {
+    .design-section {
         display: none;
     }
-    .main{
+
+    .main {
         flex-grow: 1;
     }
-    .checkboxes{
+
+    .checkboxes {
         flex-grow: 2;
     }
 }
 
-@media screen and (max-width: 480px){
-    .checkboxes{
+@media screen and (max-width: 480px) {
+    .checkboxes {
         display: none;
     }
 }
 
-@media screen and (max-width: 332px){
+@media screen and (max-width: 332px) {
     //It would be possible to reduce fonts and blocks, but since I initially did not think to create font mixins, I did not. I should also switch to something else, such as sass, because less has a lot of problems and inconveniences. It would also be possible to add additional support code like '-webkitblahblah' using the plugin.
 }
